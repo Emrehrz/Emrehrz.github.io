@@ -4,14 +4,14 @@ import AboutMe from '../components/sections/AboutMe.astro'
 import ContactsCard from '../components/sections/ContactsCard.astro'
 import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
+import HobbyCard from '../components/sections/HobbyCard.astro'
 import IntroCard from '../components/sections/IntroCard.astro'
 import Now from '../components/sections/Now.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
-import TattooCard from '../components/sections/TattooCard.astro'
 import TimeZoneCard from '../components/sections/TimeZoneCard.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 //
-import { motion, AnimatePresence } from 'framer-motion'
+// import { motion, AnimatePresence } from 'framer-motion'
 ---
 
 <script>
@@ -24,10 +24,10 @@ import { motion, AnimatePresence } from 'framer-motion'
     loaderAnimation,
     [
       cards,
-      { y: ['40%', '0%'], opacity: [0, 1] },
+      { y: ['20%', '0%'], opacity: [0, 1] },
       {
         at: '-0.1',
-        duration: 0.4,
+        duration: 0.3,
         delay: stagger(0.3),
         easing: spring({ velocity: 100, stiffness: 50, damping: 10 })
       }
@@ -39,7 +39,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 <BaseLayout
   title="Emre HORUZ - Full Stack Developer"
-  description="Emre HORUZ - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Tattoo, Study"
+  description="Emre HORUZ - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Study"
 >
   <div
     slot="loader"
@@ -53,10 +53,10 @@ import { motion, AnimatePresence } from 'framer-motion'
     <AboutMe />
     <CVCard />
     <Now />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Portfolio & Projects" href="/portfolio" />
+    <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Portfolio & Projects" href="/portfolio" /> -->
     <TimeZoneCard />
     <ContactsCard />
-    <ExperienceCard />
+    <!-- <ExperienceCard /> -->
     <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <div class="flex h-full flex-col justify-between">
         <blockquote class="mt-6 border-l-2 pl-6 italic">
@@ -65,7 +65,7 @@ import { motion, AnimatePresence } from 'framer-motion'
         <p class="mt-2 text-xs">- Jules Verne</p>
       </div>
     </Card>
-    <TattooCard />
+    <HobbyCard />
     <StudyCard />
     <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <p class="text-xs">

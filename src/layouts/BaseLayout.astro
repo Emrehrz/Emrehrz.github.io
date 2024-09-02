@@ -1,8 +1,8 @@
 ---
-import ViewTransitions from "astro/components/ViewTransitions.astro";
-import Header from "../components/Header.astro";
-import HeadSEO from "../components/HeadSEO.astro";
-import Footer from "../components/Footer.astro";
+import ViewTransitions from 'astro/components/ViewTransitions.astro'
+import Header from '../components/Header.astro'
+import HeadSEO from '../components/HeadSEO.astro'
+import Footer from '../components/Footer.astro'
 
 interface Props {
   title?: string | undefined
@@ -10,12 +10,12 @@ interface Props {
   ogImage?: URL | undefined
 }
 
-const {title, description, ogImage} = Astro.props
+const { title, description, ogImage } = Astro.props
 ---
 
 <html lang="en">
   <head>
-    <HeadSEO title={title} description={description} ogImage={ogImage} />
+    <HeadSEO title={title} description={description} />
     <ViewTransitions />
   </head>
   <body class="min-h-screen bg-background font-sans antialiased">

@@ -7,12 +7,13 @@ export const loaderAnimation = [
 ]
 
 export const LINKS = {
-  github: 'https://github.com/bue221',
-  linkedin: 'https://www.linkedin.com/in/bue221/',
-  mail: 'mailto:camiloplaza3@gmail.com',
-  instagram: 'https://www.instagram.com/caj_ink/',
-  medium: 'https://ladvace.medium.com/',
+  github: 'https://github.com/Emrehrz',
+  linkedin: 'https://www.linkedin.com/in/emre-horuz/',
+  mail: 'mailto:horuzemre3@gmail.com',
+  instagram: 'https://www.instagram.com/emre_0o7/',
+  medium: 'https://medium.com/@horuzemre3',
   discord: 'https://discordapp.com/users/163300027618295808',
+  youtube: 'https://www.youtube.com/@emrehrz001'
 }
 
 // Global
@@ -50,34 +51,28 @@ export const SEARCH: Page = {
 // Study Page
 export const STUDIES = [
   {
-    title: 'Computer Science',
-    institution: 'Universidad Central',
-    link: 'https://www.ucentral.edu.co/',
-    date: '2019 - 2027',
+    title: 'Computer Engineering',
+    institution: 'İzmir Bakırçay University',
+    link: 'https://bakircay.edu.tr/',
+    date: '2020 - 2025',
   },
-  {
-    title: '...',
-    institution: 'Platzi',
-    link: 'https://platzi.com/',
-    date: '2018 - 2022',
-  },
-  {
-    title: '...',
-    institution: 'Udemy',
-    link: 'https://www.udemy.com/',
-    date: '2018 - 2022',
-  },
+  // {
+  //   title: '...',
+  //   institution: 'Platzi',
+  //   link: 'https://platzi.com/',
+  //   date: '2018 - 2022',
+  // },
+  // {
+  //   title: '...',
+  //   institution: 'Udemy',
+  //   link: 'https://www.udemy.com/',
+  //   date: '2018 - 2022',
+  // },
   {
     title: '...',
     institution: 'Youtube',
-    link: 'https://www.youtube.com/@midulive',
-    date: '2018 - 2022',
-  },
-  {
-    title: 'Tattoo Artist',
-    institution: 'Tattoo Academy',
-    link: 'https://www.instagram.com/tattoodcacademy/',
-    date: '2024 - 2025',
+    link: 'https://www.youtube.com/@emrehrz001',
+    date: '2023 - ....',
   },
 ]
 
