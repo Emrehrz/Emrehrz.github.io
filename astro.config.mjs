@@ -8,10 +8,5 @@ export default defineConfig({
   output: 'server',
   integrations: [tailwind(), react()],
   site: 'https://Emrehrz.github.io',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    maxDuration: 8,
-  }),
+  adapter: vercel(),
 });
